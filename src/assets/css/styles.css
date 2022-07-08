@@ -19,7 +19,7 @@
 /* overlay */
 
 .overlay {
-  @apply absolute;
+  @apply absolute hidden md:block;
 }
 
 .overlay * {
