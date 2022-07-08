@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
-  document.title = "Spacetur | Home";
   return (
     <header className="fixed w-full z-50 bg-gradient-to-r from-pink-400 to-fuchsia-400">
       <div className="container mx-auto py-5">

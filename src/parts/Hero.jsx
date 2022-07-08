@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col sm:flex-row items-center justify-between hero container mx-auto pt-[7rem]">
+    <section className="flex flex-col sm:flex-row items-center justify-between hero container mx-auto pt-[7rem] mb-20">
       <div className="text-center hero-caption flex-1">
         <h1 className="text-3xl md:text-5xl font-bold">
           The Room <br />
@@ -16,12 +15,12 @@ export default function Hero() {
           <br className="hidden lg:block" />
           membuat ruangan terasa homey
         </h2>
-        <Link
-          to="#browse-the-room"
+        <a
+          href="#browse-the-room"
           className="bg-pink-400 text-black hover:bg-black hover:text-pink-400 rounded-full px-8 py-3 mt-4 inline-block flex-none transition duration-200"
         >
           Explore Now
-        </Link>
+        </a>
       </div>
       <div className="flex-1">
         <div className="hero-image relative">

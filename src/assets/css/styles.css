@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-  @apply font-poppins;
+  @apply font-poppins scroll-smooth;
 }
 
 @tailwind base;
@@ -14,6 +14,27 @@
       max-width: 1140px;
     }
   }
+}
+
+/* utils */
+
+.grid {
+  grid-auto-flow: row dense;
+  grid-auto-rows: minmax(180px, auto);
+}
+
+.stretched-link {
+  @apply absolute inset-0 z-10;
+}
+
+/* card */
+
+.card .card-shadow {
+  @apply transition duration-300 shadow-none h-full;
+}
+
+.card:hover .card-shadow {
+  @apply shadow-lg;
 }
 
 /* overlay */
