@@ -5,12 +5,10 @@ export default function BrowseTheRoom() {
   return (
     <section className="flex bg-gray-100 py-16 px-4" id="browse-the-room">
       <div className="container mx-auto">
-        <div className="flex flex-start mb-4">
-          <h3 className="text-2xl capitalize font-semibold">
-            browse the room <br className="" />
-            that we designed for you
-          </h3>
-        </div>
+        <h3 className="text-2xl capitalize font-semibold mb-5">
+          browse the room <br className="" />
+          that we designed for you
+        </h3>
         <div className="grid grid-rows-2 grid-cols-9 gap-4">
           <div
             className="relative col-span-9 row-span-1 md:col-span-4 card"
