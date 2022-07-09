@@ -1,9 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
+  const location = useLocation();
+  // "w-full z-50 bg-gradient-to-r from-pink-400 to-fuchsia-400"
   return (
-    <header className="fixed w-full z-50 bg-gradient-to-r from-pink-400 to-fuchsia-400">
+    <header
+      className={
+        location.pathname === "/details"
+          ? "w-full z-50 bg-gradient-to-r from-pink-400 to-fuchsia-400"
+          : "fixed w-full z-50 bg-gradient-to-r from-pink-400 to-fuchsia-400"
+      }
+    >
       <div className="container mx-auto py-5">
         <div className="flex items-center justify-between">
           <div className="img-logo">
